@@ -5,13 +5,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Handyboi Construction</title>
+    <title>Professional Home Services</title>
 
     <!-- Link to Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- a Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans" rel="stylesheet">
 
     <!-- FontAwesome for search icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -21,7 +21,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 
@@ -31,13 +30,13 @@
 
     <div class="container-full">
         <header>
+            <div id="navbar">
+                <div ng-include="'nav.html'"></div>
+            </div>
             <img src="../data/cabin-bw.jpg" class="img-full bw">
             <h1 class="text-fade-in text-home">Welcome to Professional Home Services</h1>
             <h3 class="text-fade-in text-header-content" style="top:40vh; animation-delay: 8s;">We value our customers</h3>
             <h3 class="text-fade-in text-header-content" style="top:50vh; animation-delay: 11s;">(every one o' yas)</h3>
-            <div id="navbar">
-                <div ng-include="'nav.html'"></div>
-            </div>
         </header>
         <div id="content">
             <h2>About Us</h2>
@@ -53,9 +52,13 @@
 
             </div>
         </div>
+<!--        <div class="row">-->
+<!--            <div class="col">-->
+                <div ng-include="'footer.html'"></div>
+<!--            </div>-->
+<!--        </div>-->
     </div>
-    
-    <div ng-include="'footer.html'"></div>
+
 
     <!-- jQuery--this must come first! -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
