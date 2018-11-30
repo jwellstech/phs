@@ -19,6 +19,9 @@ body {
 
 .navbar {
     z-index: 9999;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 .img-full {
@@ -71,8 +74,8 @@ body {
 }
 
 footer {
-/*    position: fixed;*/
-/*    bottom: 0px;*/
+    position: fixed;
+    bottom: 0px;
     height: 75px;
     width: 100%;
     background-color: #7B1FA2;
@@ -80,6 +83,12 @@ footer {
     font-size: 10pt;
     text-align: center;
     padding-top: 35px;
+}
+.extendo-head {
+    height: 56px;
+}
+.extendo-foot {
+    height: 70px;
 }
 
 @keyframes blurout {
