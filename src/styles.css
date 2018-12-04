@@ -84,6 +84,11 @@ footer {
     text-align: center;
     padding-top: 35px;
 }
+
+.contact-form{
+    width: 100%;
+    text-align: center;
+}
 .extendo-head {
     height: 56px;
 }
