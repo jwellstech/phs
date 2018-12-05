@@ -29,11 +29,37 @@
     <div class="container-full">
         <ng-include src="'nav.html'"></ng-include>
         <div class="card m-2">
-            <div class="card-header">Contact</div>
-            <div class="card-body">email</div>
-            <div class="card-body">phone</div>
-            <div class="card-body">address</div>
+            <div class="card-header">Chris Foley</div>
+            <div class="card-body">Email</div>
+            <div class="card-body">cfoley821@gmail.com</div>
+            <div class="card-body">Phone</div>
+            <div class="card-body">(336)302-0049
+            </div>
+
         </div>
+    </div>
+    <h3>Our Location:</h3>
+    <div id="map"></div>
+    <script type="text/javascript">
+        function initMap() {
+            var uluru = {
+                lat: 35.7335,
+                lng: -79.6525
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 9,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmeNxzACUmXT0nWw4thJXNuQjYOdQn_Jc&callback=initMap">
+    </script>
+
+
     </div>
 
     <div class="contact-form">
