@@ -103,6 +103,11 @@ footer {
     text-align: center;
 }
 
+.location {
+    font-size: 20pt;
+    margin-top: 10px;
+}
+
 .contact-form{
     max-width: 100%;
     width: 100%;
