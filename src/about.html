@@ -16,7 +16,7 @@
     <!-- FontAwesome for search icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-    <!-- AngularJS -->
+    <!-- AngularJS for including HTML from other documents -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
     <!-- Custom CSS -->
@@ -24,46 +24,27 @@
 
 </head>
 
+<!--  ng-app is needed for AngularJS -->
+
 <body ng-app="" class="bg-black">
 
     <div class="container-full">
-        <ng-include src="'nav.html'"></ng-include>
-        <div class="card m-2">
-            <div class="card-header">Chris Foley</div>
-            <div class="card-body">Email: <a href="mailto:cfoley821@gmail.com? Subject=Free Consultation" target="_top">cfoley821@gmail.com</a></div>
-            <div class="card-body">Phone: (336)-302-0049</div>
+        <header>
+            <div id="navbar">
+                <div ng-include="'nav.html'"></div>
             </div>
-
+        </header>
+        <div id="content">
+            <div class="card m-2">
+                <div class="card-header">Who Are We?</div>
+                <div class="card-body">We are a small family business located in Ramseur, NC. We have been serving customers from all across North Carolina since 1987.</div>
+                <div class="card-body">We offer all types of home repairs and improvements, including but not limited to: electrical, plumbing, and flooring.</div>
+                <div class="card-body">Feel free to contact us about any home rennovation services you are interested in that we currently do not provide.</div>
+            </div>
         </div>
+        
+        <div ng-include="'footer.html'"></div>
     </div>
-    <h3>Our Location:</h3>
-    <div id="map"></div>
-    <script type="text/javascript">
-        function initMap() {
-            var uluru = {
-                lat: 35.7335,
-                lng: -79.6525
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 9,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
-    </script>
-    <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmeNxzACUmXT0nWw4thJXNuQjYOdQn_Jc&callback=initMap">
-    </script>
-
-
-    </div>
-
-    <div class="contact-form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7zj78prPvXC6R5qRmiKgZjJl8bJu7xDGSTcDRIoiN4fmMFg/viewform?embedded=true" width="640" height="1088" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>
-    <div ng-include="'footer.html'"></div>
 
 
     <!-- jQuery--this must come first! -->
@@ -74,6 +55,9 @@
 
     <!-- unique Bootstrap 4 JavaScript scripts -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
 
 </body>
 
