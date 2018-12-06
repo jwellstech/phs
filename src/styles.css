@@ -80,7 +80,10 @@ body {
 }
 
 .card-header {
-    background-color: #557f83;
+    font-size: 14pt;
+    text-align: center;
+    color: white;
+    background-color: #006973;
 }
 
 footer {
