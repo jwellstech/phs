@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Professional Home Services</title>
+
+    <!-- Link to Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- a Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans" rel="stylesheet">
+
+    <!-- FontAwesome for search icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- AngularJS for including HTML from other documents -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<!--  ng-app is needed for AngularJS -->
+
+<body ng-app="" class="bg-black">
+
+    <div class="container-full">
+        <header>
+            <div id="navbar">
+                <div ng-include="'nav.html'"></div>
+            </div>
+            <img src="../data/cabin-bw.jpg" class="img-full bw">
+            <h1 class="text-fade-in text-home">Welcome to Professional Home Services</h1>
+            <h3 class="text-fade-in text-header-content" style="top:40vh; animation-delay: 2s;">We value our customers</h3>
+            <h3 class="text-fade-in text-header-content" style="top:50vh; animation-delay: 3s;">Schedule a FREE estimate and consultation with us today!</h3>
+        </header>
+
+        <h3>Past Projects</h3>
+
+        <div class="content" style="align-content: center">
+            <div>Install Backsplash, Tilework, and Shower Install</div>
+            <img src="../data/fwd/backsplash2_OLD.jpg">
+            <img src="../data/fwd/traditional-kitchen.jpg">
+            <img src="../data/fwd/traditional-kitchen11.jpg">
+            <img src="../data/fwd/1311920986526_t310blueborder__SX455_SY455_.jpg">
+            <img src="../data/fwd/neo-angle-door-44.png">
+        </div>
+
+
+        <div class="contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuRGzZ02IF5evVTxyyfzBnHhe64-n8jltW3G-k4NsrczW-pg/viewform?embedded=true" width="640" height="1134" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        <div ng-include="'footer.html'"></div>
+    </div>
+
+
+    <!-- jQuery--this must come first! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- popper.js--a library of drop-down and pop-up JavaScript scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <!-- unique Bootstrap 4 JavaScript scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
