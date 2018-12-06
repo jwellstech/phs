@@ -17,7 +17,7 @@ body {
 }
 
 .bg-green {
-    background-color: #4b7276;
+    background-color: #557f83;
 }
 
 .navbar {
@@ -73,7 +73,7 @@ body {
 }
 
 .card-header {
-    background-color: #4b7276;
+    background-color: #557f83;
 }
 
 footer {
@@ -90,6 +90,7 @@ footer {
 .contact-form{
     width: 100%;
     text-align: center;
+    padding-top: 40px;
 }
 .extendo-head {
     height: 56px;
