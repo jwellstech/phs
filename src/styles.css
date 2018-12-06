@@ -97,6 +97,12 @@ footer {
     padding-top: 20px;
 }
 
+.page-title {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
 .contact-form{
     max-width: 100%;
     width: 100%;
