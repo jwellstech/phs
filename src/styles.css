@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 .bg-black {
-    background-color: #DADDD8;
+    background-color: #d8e5e4;
 }
 
 .bg-grey {
@@ -70,9 +70,13 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: #f8f8f8;
     border: 2px solid #525252;
     color: black;
+}
+
+.card-center {
+    width: 50%; 
 }
 
 .card-header {
@@ -91,6 +95,7 @@ footer {
 }
 
 .contact-form{
+    max-width: 100%;
     width: 100%;
     text-align: center;
     padding-top: 40px;
