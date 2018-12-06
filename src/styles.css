@@ -4,6 +4,9 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
 }
+.container-full {
+    justify-content: center;
+}
 .bg-black {
     background-color: #DADDD8;
 }
